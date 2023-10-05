@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portfolio SARA</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="larguraMaxContainer">
+                <div class="container_header">
+                    <div class="logo">
+                        <h3>Portfólio</h3>
+                    </div>
+                    <button id="btn-mobile" >&#9776;</button>
+                    <div class="menu">
+                        <p><a href="#about-me">Sobre mim</a></p>
+                        <p><a href="#projects">Projetos</a></p>
+                        <p><a href="#skills">Minhas skills</a></p>
+                    </div>
+                </div>
+            </div> 
+        </header>
+        <main class="container_main">
+            <div class="larguraMaxContainer">
+            <div class="container_title">
+                <div class="title">
+                    <div class="content">
+                        <h2>
+                            Olá, eu sou<br>
+                            Sara Evangelista
+                        </h2>
+                        <p>
+                            Estudante do Curso Sistemas de Informação 
+                        </p>
+                    </div>
+                </div>
+                <div class="img_bg">
+                    <img src="./images/mulher.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="about_me" id="about-me">
+                <h3>Sobre mim</h3>
+                <p>
+                    Sou estudante de Sistemas de Informação, atualmente estou no 8º semestre da faculdade, <br>
+                    gosto muito da área de tecnologia e estou sempre em busca de adquirir conhecimento.
+                </p>
+            </div>
+            <div class="contacts" id="contacts">
+                <div class="media">
+                    <div class="icon_bg">
+                        <i class="far fa-smile"></i>
+                        <img src="./images/utilizador.png" alt="user">
+                    </div>
+                    <div class="description">
+                        <p>Meu Nome</p>
+                        <span>Sara Evangelista</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="icon_bg">
+                        <i class="far fa-envelope"></i>
+                        <img src="./images/envelope.png" alt="email">
+                    </div>
+                    <div class="description">
+                        <p>Email</p>
+                        <span>sara.evangelista17@gmail.com</span>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="icon_bg">
+                        <i class="fab fa-instagram"></i>
+                        <img src="./images/instagram.png" alt="instagram">
+                    </div>
+                    <div class="description">
+                        <p>Instagram</p>
+                        <span>@saraevann_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="projects" id="projects">
+                <div class="title_proj">
+                    <h3>Projetos</h3>
+                </div>
+                <div class="progs">
+                    <div class="proj">
+                        <div class="img_proj">
+                            <img src="./images/curriculoHTML.png" width="100%" height="auto" alt="curriculo HTML">
+                        </div>
+                        <div class="proj_content">
+                            <p><a href="https://github.com/saraevan10/curriculoHTML_elasnatech">Currículo HTML</a></p>
+                            <span>Tecnologias: HTML.</span>
+                        </div>
+                    </div>
+                    <div class="proj">
+                        <div class="img_proj">
+                            <img src="./images/cardapioPizzaria.png" width="100%" alt="cardapio">
+                        </div>
+                        <div class="proj_content">
+                            <p><a href="https://github.com/saraevan10/cardapio_elasnatech">Cardápio</a></p>
+                            <span>Tecnologias: HTML e CSS.</span>
+                        </div>
+                    </div>
+                    <div class="proj">
+                        <div class="img_proj">
+                            <img src="./images/ods.png" width="100%" alt="ods">
+                        </div>
+                        <div class="proj_content">
+                            <p><a href="https://github.com/saraevan10/odsDesafio3_inspiraja">Meu primeiro site ODS</a></p>
+                            <span>Tecnologias: HTML e CSS.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills" id="skills">
+                <div class="skill_title">
+                    <h3>Minhas Skills</h3>
+                </div>
+                <div class="sklls">
+                    <div class="skill">
+                        <img src="./images/html5.png" alt="html">
+                    </div>
+                    <div class="skill">
+                        <img src="./images/css3.png" alt="css">
+                    </div>
+                    <div class="skill">
+                        <img src="./images/js.png" alt="javascript">
+                    </div>
+                    <div class="skill">
+                        <img src="./images/python.png" alt="python">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <form name="meu_form">
+                <div class="about_me">
+
+                <h1>Entre em contato</h1>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeid" placeholder="Digite seu nome" required="required" name="nome" />
+                
+                <label for="fone">Telefone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone" />
+
+                <label for="email">Email</label>
+                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+                
+              <label for="mensagem">Mensagem</label>
+                <textarea placeholder="Deixe sua mensagem"></textarea>
+              
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+              </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <h3>Projeto desenvolvido por Sara Evangelista durante o curso Programação Web, promovido pela Junior Achievement - ELAS NA TECH</h3>
+        </footer>
+        
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
